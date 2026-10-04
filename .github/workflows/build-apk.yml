@@ -25,9 +25,6 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Prebuild Android
-        run: npx expo prebuild --platform android --clean
-
       - name: Build APK
         run: |
           cd android
