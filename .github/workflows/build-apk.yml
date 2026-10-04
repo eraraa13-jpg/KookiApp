@@ -23,10 +23,10 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install
 
-      - name: Generate Android Project
-        run: npx expo prebuild --platform android
+      - name: Prebuild Android Project
+        run: npx expo prebuild --platform android --clean
 
       - name: Build Debug APK
         run: |

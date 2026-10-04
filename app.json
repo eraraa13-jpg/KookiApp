@@ -11,9 +11,6 @@
     "android": {
       "package": "com.kooki.finance",
       "versionCode": 1
-    },
-    "plugins": [
-      "expo-sqlite"
-    ]
+    }
   }
 }
