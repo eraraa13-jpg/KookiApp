@@ -28,15 +28,6 @@ jobs:
       - name: Generate Android Project
         run: npx expo prebuild --platform android
 
-      - name: Configure Android NDK and Memory
-        run: |
-          NDK_PATH=$(ls -d $ANDROID_HOME/ndk/* | tail -n 1)
-          echo "ndk.dir=$NDK_PATH" >> android/local.properties
-          echo "org.gradle.jvmargs=-Xmx4096m -XX:MaxMetaspaceSize=1024m" >> android/gradle.properties
-
-      - name: Accept Android Licenses
-        run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
-
       - name: Build Debug APK
         run: |
           cd android
