@@ -10,4 +10,4 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
-.env*
+.env*package-lock.json
