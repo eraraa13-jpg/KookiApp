@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
     "splash": {
       "backgroundColor": "#0f0f1a"
     },
@@ -14,11 +15,6 @@
     },
     "plugins": [
       "expo-sqlite"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "ff7846bc-0b7e-4c6d-80b1-7279572840c1"
-      }
-    }
+    ]
   }
 }
